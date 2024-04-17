@@ -32,23 +32,39 @@ body {
             background-color:#d1b9ff;
         }
 
-        .container img {
-            margin-right: 10px;
-            width: 100px; 
-        height: auto;
-        }
+            .container img {
+    margin-right: 10px;
+    width: 80%;
+    max-width: 100%; 
+    height: auto; 
+      }
+
 
         @media screen and (max-width: 100px) {
     .container {
         flex-direction: column;
         text-align: center;
     }
+}
 
+        
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
     .container img {
-        margin-right: 0;
-        margin-bottom: 10px;
-        width: 600px;
-        height: 300px;
+        width: 80%; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container img {
+        width: 90%; 
     }
 }
 
