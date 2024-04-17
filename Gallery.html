@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/starhat.png" type="image/png" sizes="32x32">
+    <title>Starbonsai's Art</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Starbonsai's Art Logo" width="300px" height="100px">
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/Home.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/CommissionMe!.html">Commissions</a></li>
+                <li><a href="http://127.0.0.1:5500/AboutMe.html">About Me</a></li>
+                <li><a href="http://127.0.0.1:5500/ContactMe.html">Contact</a></li>
+                <li><a href="http://127.0.0.1:5500/Gallery.html">Gallery</a></li>
+                <li><a href="http://127.0.0.1:5500/Characters.html">Characters</a></li>
+                <li><a href="https://ko-fi.com/starbonsai">Support Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    </main>
+
+    <style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(assets/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0; 
+}
+
+.container {
+  position: relative;
+  background-color: #a387ff;
+  padding: 20px;
+  max-width: 1000px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  z-index: 1;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #40209f;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: -5px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color:#d1b9ff;
+  padding: 2px 16px;
+  color: #40209f;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  color: #40209f;
+  margin-top: 20px; 
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -4px; 
+  margin-left: -4px; 
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.responsive-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  padding: 0 12px 0 6px; 
+}
+
+.responsive-gallery img {
+    margin-top: 8px;
+  margin-bottom: 8px; 
+  vertical-align: middle;
+  height: auto;
+  object-fit: contain;
+  width: 100%;
+  width: calc(33.33% - 18px);
+}
+
+@media screen and (min-width: 800px) {
+  .responsive-gallery img {
+    flex: 0 0 calc(33.33% - 4px); 
+    max-width: 33.33%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .responsive-gallery img {
+    flex: 0 0 calc(100% - 4px);
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .row .column {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .row .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .row .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .row .column {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 3000px){
+    .caption-container {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .caption-container {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .caption-container {
+        font-size: 30px;
+    }
+}
+ 
+ 
+    </style>
+
+    <h1> Check Out My Gallery! </h1>
+
+    <div class="container">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+            <img src="drawings/larvaluss.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+            <img src="drawings/epic potbelly.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+            <img src="drawings/epic spunge.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+            <img src="drawings/Angel_Lady.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+            <img src="drawings/stellafancy.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+            <img src="drawings/pearlmarina.jpg" style="width:100%">
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="drawings/larvaluss.png" style="width:100%" onclick="currentSlide(1)" alt="Larvaluss">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="drawings/epic potbelly.png" style="width:100%" onclick="currentSlide(2)" alt="Epic Potbelly">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="drawings/epic spunge.png" style="width:100%" onclick="currentSlide(3)" alt="Epic Spunge">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="drawings/Angel_Lady.png" style="width:100%" onclick="currentSlide(4)" alt="Angel Lady">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="drawings/stellafancy.png" style="width:100%" onclick="currentSlide(5)" alt="Orange is Pink">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="drawings/pearlmarina.jpg" style="width:100%" onclick="currentSlide(6)" alt="Pearl and Marina">
+          </div>
+        </div>
+      </div>
+
+
+        </div>
+    </div>
+      
+
+    <div class="responsive-gallery">
+        <img src="drawings/among_us_sticker.png">
+        <img src="drawings/aubergine_what.png">
+        <img src="drawings/balloons.png">
+    </div>
+    <div class="responsive-gallery">
+        <img src="drawings/broken.png">
+        <img src="drawings/BIG commission.png.webp">
+        <img src="drawings/Breast_Cancer_Mermaid.png">
+    </div>
+    <div class="responsive-gallery">
+        <img src="drawings/Bunny.png">
+        <img src="drawings/cambion.png">
+        <img src="drawings/celeste.jpg">
+    </div>
+    <div class="responsive-gallery">
+        <img src="drawings/commission.jpg">
+        <img src="drawings/confusedthing.png">
+        <img src="drawings/Celeste_Sticker.png">
+    </div>
+    <div class="responsive-gallery">
+        <img src="drawings/draculaura.png">
+        <img src="drawings/fiery commish.png">
+        <img src="drawings/gengarsona.png">
+    </div>
+    <div class="responsive-gallery">
+        <img src="drawings/Gengar_Design-1.png">
+        <img src="drawings/Gungus.png">
+        <img src="drawings/The_Imposter.png">
+    </div>
+    <div class="responsive-gallery">
+        <img src="drawings/Jayvee.png">
+        <img src="drawings/kirby_sticker.png">
+        <img src="drawings/LDF_fanart.png">
+    </div>
+    <div class="responsive-gallery">
+        <img src="drawings/mom_transparent_star.png">
+        <img src="drawings/Masagana.png">
+        <img src="drawings/nilesmajors.png">
+    </div>
+    <div class="responsive-gallery">
+        <img src="drawings/oc.png">
+        <img src="drawings/phil_fanart.png">
+        <img src="drawings/pinkie_pie.png">
+    </div>
+    <div class="responsive-gallery">
+        <img src="drawings/Pines_Bust.png">
+        <img src="drawings/Q.png">
+        <img src="drawings/shark icon.PNG">
+    </div>
+    <div class="responsive-gallery">
+        <img src="drawings/shiny_typhlosion-1.png">
+        <img src="drawings/space.jpg">
+        <img src="drawings/spica.png">
+    </div>
+    <div class="responsive-gallery">
+        <img src="drawings/swirlsbadge.png">
+        <img src="drawings/swirlsbadge2.png">
+        <img src="drawings/swirlsbadge3.png">
+    </div>
+    <div class="responsive-gallery">
+        <img src="drawings/swirlsbust.png">
+        <img src="drawings/Sammy Scare.jpg">
+        <img src="drawings/swirlsicon.png">
+    </div>
+    <div class="responsive-gallery">
+        <img src="drawings/starcollab.png">
+        <img src="drawings/Tempest.jpg">
+        <img src="drawings/Typhlosion_BEAST_MODE-1.png">
+    </div>
+    <div class="responsive-gallery">
+        <img src="drawings/verosika.png">
+        <img src="drawings/Vladimir_2.png">
+        <img src="drawings/witheredbonnie.png">
+    </div>
+    <div class="responsive-gallery">
+        <img src="drawings/Weather_Report.png">
+        <img src="drawings/Sammy Scare.jpg">
+        <img src="drawings/acid.jpg">
+    </div>
+
+
+    
+
+    <footer>
+        <p>Check out my Socials!</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/starbonsai/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCBfgQUXem67G-doDflyUF1w"><i class="fab fa-youtube"></i></a>
+            <a href="https://ko-fi.com/starbonsai"><i class="fas fa-mug-hot"></i></a>
+            <a href="mailto:starbonsaiart@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>&copy; 2024 Starbonsai's Art. All Rights Reserved.</p>
+        <p2>All Fanart Copyrights Go to their respective Owners.</p2>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script>
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+    </script>
+</body>
+</html>
